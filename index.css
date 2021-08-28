@@ -1,4 +1,5 @@
 :root {
+  --clock: rgb(54, 54, 54);
   --numbers: #707070;
   --hand-second: rgb(206, 127, 24);
   --hand-minute: #b8b8b8;
@@ -16,4 +17,22 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.clock {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: var(--clock);
+  box-shadow: 1px 1px 5px 5px rgba(163, 163, 163, 0.4),
+    -1px 1px 5px 5px rgba(163, 163, 163, 0.4),
+    1px -1px 5px 5px rgba(163, 163, 163, 0.4),
+    -1px -1px 5px 5px rgba(163, 163, 163, 0.4),
+    inset -1px -1px 6px 1px rgba(90, 88, 88, 0.3),
+    inset 1px 1px 6px 1px rgba(90, 88, 88, 0.3),
+    inset 1px -1px 6px 1px rgba(90, 88, 88, 0.3),
+    inset -1px 1px 6px 1px rgba(90, 88, 88, 0.3);
+  border: 5px solid #393838;
 }
