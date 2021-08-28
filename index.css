@@ -1,0 +1,19 @@
+:root {
+  --numbers: #707070;
+  --hand-second: rgb(206, 127, 24);
+  --hand-minute: #b8b8b8;
+  --hand-hour: #b8b8b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
