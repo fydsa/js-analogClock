@@ -4,6 +4,8 @@
   --hand-second: rgb(206, 127, 24);
   --hand-minute: #b8b8b8;
   --hand-hour: #b8b8b8;
+  --clock-height: 300px;
+  --clock-width: 300px;
 }
 
 * {
@@ -23,8 +25,8 @@ body {
 
 .clock {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: var(--clock-width);
+  height: var(--clock-height);
   border-radius: 50%;
   background-color: var(--clock);
   box-shadow: 2px 1px 3px rgba(53, 53, 53, 0.5),
@@ -34,16 +36,12 @@ body {
 }
 
 .number {
+  box-shadow: 1px 1px 2px #1a1a1a;
+  width: 1px;
+  height: 10px;
   color: var(--numbers);
-  font-size: 20px;
-  text-shadow: 1px 1px 2px #1a1a1a;
-}
-
-.number {
-}
-
-.number:nth-of-type(3n + 1) {
-  color: red;
+  background-color: var(--numbers);
+  text-shadow: 1px 1px 0px #1a1a1a, 1px 2px 1px #1a1a1a, 2px 2px 1px #1a1a1a;
 }
 
 .number-twelve {
