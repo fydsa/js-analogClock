@@ -43,8 +43,7 @@ body {
   padding: 10px;
 }
 
-.number span {
-  display: block;
+.number div {
   font-size: 20px;
   color: var(--numbers);
   text-shadow: 1px 1px 0px #1a1a1a, 1px 2px 1px #1a1a1a, 2px 2px 1px #1a1a1a,
@@ -55,7 +54,7 @@ body {
   transform: rotate(90deg);
 }
 
-.number-three span {
+.number-three div {
   transform: rotate(-90deg);
 }
 
@@ -63,7 +62,7 @@ body {
   transform: rotate(180deg);
 }
 
-.number-six span {
+.number-six div {
   transform: rotate(-180deg);
 }
 
@@ -71,6 +70,6 @@ body {
   transform: rotate(270deg);
 }
 
-.number-nine span {
+.number-nine div {
   transform: rotate(90deg);
 }
