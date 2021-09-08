@@ -38,7 +38,7 @@ body {
   border: 5px solid #393838;
 }
 
-.clock::before {
+.clock::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -132,9 +132,7 @@ body {
 
 .hand {
   position: absolute;
-  /* top: 160px; */
-  transform-origin: center;
-  /* left: 50%; */
+  transform-origin: bottom;
 }
 
 .hand-second {
@@ -142,6 +140,8 @@ body {
   height: calc(var(--clock-height) / 3);
   background-color: red;
   border-radius: 10px;
+  top: 45px;
+  z-index: 2;
 }
 
 .hand-minute {
@@ -149,6 +149,7 @@ body {
   height: calc(var(--clock-height) / 3.5);
   background-color: blue;
   border-radius: 10px;
+  top: 60px;
 }
 
 .hand-hour {
@@ -156,4 +157,5 @@ body {
   height: calc(var(--clock-height) / 4);
   background-color: green;
   border-radius: 10px;
+  top: 71px;
 }
