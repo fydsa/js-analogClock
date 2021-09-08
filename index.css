@@ -160,3 +160,14 @@ body {
   background-color: var(--fluorescent-green);
   top: 73.5px;
 }
+
+.btn-unmute,
+.btn-mute {
+  position: relative;
+  width: 55px;
+  height: 30px;
+  border-radius: 20px;
+  top: 214px;
+  left: -173px;
+  outline: none;
+}

@@ -21,3 +21,16 @@ function timeHandler() {
 }
 
 setInterval(timeHandler, 1000);
+
+const button = document.querySelector("button");
+
+button.textContent = "Unmute";
+button.className = "btn-unmute";
+
+button.addEventListener("click", ticktockHandler);
+
+function ticktockHandler() {
+  button.textContent = button.textContent === "Unmute" ? "Mute" : "Unmute";
+  button.className =
+    button.textContent === "Unmute" ? "btn-mute" : "btn-unmute";
+}
