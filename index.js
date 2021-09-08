@@ -23,20 +23,25 @@ function timeHandler() {
 
   hand_second.style.transform = `rotate(${(second / 60) * 360}deg)`;
 
-  button.textContent === "Unmute" ? tick_tock.pause() : tick_tock.play();
+  button.textContent === "Unmute tick-tock"
+    ? tick_tock.pause()
+    : tick_tock.play();
 }
 
 setInterval(timeHandler, 1000);
 
 const button = document.querySelector("button");
 
-button.textContent = "Unmute";
+button.textContent = "Unmute tick-tock";
 button.className = "btn-unmute";
 
 button.addEventListener("click", ticktockHandler);
 
 function ticktockHandler() {
   button.className =
-    button.textContent === "Unmute" ? "btn-mute" : "btn-unmute";
-  button.textContent = button.textContent === "Unmute" ? "Mute" : "Unmute";
+    button.textContent === "Unmute tick-tock" ? "btn-mute" : "btn-unmute";
+  button.textContent =
+    button.textContent === "Unmute tick-tock"
+      ? "Mute tick-tock"
+      : "Unmute tick-tock";
 }
