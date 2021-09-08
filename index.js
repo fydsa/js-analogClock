@@ -2,6 +2,8 @@ const hand_hour = document.querySelector(".hand-hour");
 const hand_minute = document.querySelector(".hand-minute");
 const hand_second = document.querySelector(".hand-second");
 
+const tick_tock = new Audio("./tick.mp3");
+
 function timeHandler() {
   let time = new Date();
 
@@ -18,6 +20,8 @@ function timeHandler() {
   }deg)`;
 
   hand_second.style.transform = `rotate(${(second / 60) * 360}deg)`;
+
+  button.textContent === "Unmute" ? tick_tock.pause() : tick_tock.play();
 }
 
 setInterval(timeHandler, 1000);
