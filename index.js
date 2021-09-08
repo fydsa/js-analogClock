@@ -2,7 +2,9 @@ const hand_hour = document.querySelector(".hand-hour");
 const hand_minute = document.querySelector(".hand-minute");
 const hand_second = document.querySelector(".hand-second");
 
-const tick_tock = new Audio("./tick.mp3");
+const tick_tock = new Audio(
+  "https://s19.picofile.com/d/8440504176/f9bb29a6-15f4-429f-bede-fb1704a4277c/tick.mp3"
+);
 
 function timeHandler() {
   let time = new Date();
@@ -34,7 +36,7 @@ button.className = "btn-unmute";
 button.addEventListener("click", ticktockHandler);
 
 function ticktockHandler() {
-  button.textContent = button.textContent === "Unmute" ? "Mute" : "Unmute";
   button.className =
     button.textContent === "Unmute" ? "btn-mute" : "btn-unmute";
+  button.textContent = button.textContent === "Unmute" ? "Mute" : "Unmute";
 }

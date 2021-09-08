@@ -164,10 +164,24 @@ body {
 .btn-unmute,
 .btn-mute {
   position: relative;
-  width: 55px;
-  height: 30px;
+  width: fit-content;
+  height: fit-content;
   border-radius: 20px;
   top: 214px;
-  left: -173px;
+  left: -184px;
   outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 10px 12px;
+  cursor: pointer;
+  background-color: var(--clock);
+  box-shadow: -3px 2px 2px #1a1a1a, 1px -3px 2px #1a1a1a, 1px 3px 2px #1a1a1a;
+}
+
+.btn-unmute {
+  color: var(--fluorescent-green);
+}
+
+.btn-mute {
+  color: var(--numbers);
 }
