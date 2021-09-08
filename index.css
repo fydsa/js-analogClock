@@ -1,11 +1,10 @@
 :root {
   --clock: rgb(54, 54, 54);
   --numbers: #707070;
-  --hand-second: rgb(206, 127, 24);
-  --hand-minute: #b8b8b8;
-  --hand-hour: #b8b8b8;
+  --hand-second: #b8b8b8;
   --clock-height: 300px;
   --clock-width: 300px;
+  --fluorescent-green: #66ff66;
 }
 
 * {
@@ -45,7 +44,8 @@ body {
   height: 12px;
   border-radius: 50%;
   background-color: var(--numbers);
-  z-index: 1000;
+  z-index: 3;
+  box-shadow: 1px 1px 3px #1a1a1a;
 }
 
 .number {
@@ -57,8 +57,8 @@ body {
 }
 
 .number div {
-  font-size: 20px;
-  color: var(--numbers);
+  font-size: 22px;
+  color: var(--fluorescent-green);
   text-shadow: 1px 1px 0px #1a1a1a, 1px 2px 1px #1a1a1a, 2px 2px 1px #1a1a1a,
     1px 1px 2px rgba(255, 255, 255, 0.5);
 }
@@ -66,10 +66,10 @@ body {
 .no-num::after {
   content: "";
   position: absolute;
-  width: 1px;
+  width: 2px;
   height: 10px;
   top: 17px;
-  background-color: var(--numbers);
+  background-color: var(--fluorescent-green);
   box-shadow: 1px 1px 0px #1a1a1a, 1px 2px 1px #1a1a1a, 2px 2px 1px #1a1a1a,
     1px 1px 2px rgba(255, 255, 255, 0.5);
 }
@@ -133,29 +133,30 @@ body {
 .hand {
   position: absolute;
   transform-origin: bottom;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0px 2px 2px #1a1a1a, 2px -2px 2px #1a1a1a,
+    1px -1px 1px rgba(255, 255, 255, 0.5);
 }
 
 .hand-second {
   width: 3px;
   height: calc(var(--clock-height) / 3);
-  background-color: red;
-  border-radius: 10px;
+  background-color: var(--hand-second);
   top: 45px;
   z-index: 2;
 }
 
 .hand-minute {
-  width: 4px;
+  width: 5px;
   height: calc(var(--clock-height) / 3.5);
-  background-color: blue;
-  border-radius: 10px;
-  top: 60px;
+  background-color: var(--fluorescent-green);
+  top: 59px;
+  z-index: 1;
 }
 
 .hand-hour {
-  width: 5px;
-  height: calc(var(--clock-height) / 4);
-  background-color: green;
-  border-radius: 10px;
-  top: 71px;
+  width: 8px;
+  height: calc(var(--clock-height) / 4.2);
+  background-color: var(--fluorescent-green);
+  top: 73.5px;
 }
