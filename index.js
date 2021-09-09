@@ -3,7 +3,7 @@ const hand_minute = document.querySelector(".hand-minute");
 const hand_second = document.querySelector(".hand-second");
 
 const tick_tock = new Audio(
-  "https://s19.picofile.com/d/8440504176/f9bb29a6-15f4-429f-bede-fb1704a4277c/tick.mp3"
+  "https://download2152.mediafire.com/6f9eicm2g6gg/spyae25j4vw5m2o/tick.mp3"
 );
 
 function timeHandler() {
