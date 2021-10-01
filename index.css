@@ -164,8 +164,8 @@ body {
 .btn-unmute,
 .btn-mute {
   position: relative;
-  width: fit-content;
-  height: fit-content;
+  width: 150px;
+  height: 45px;
   border-radius: 20px;
   top: 214px;
   left: -211px;
