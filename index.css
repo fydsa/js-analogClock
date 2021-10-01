@@ -165,10 +165,10 @@ body {
 .btn-mute {
   position: relative;
   width: 150px;
-  height: 45px;
+  height: max-content;
   border-radius: 20px;
   top: 214px;
-  left: -211px;
+  left: -217px;
   outline: none;
   border: none;
   font-size: 16px;
